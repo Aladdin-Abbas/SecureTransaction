@@ -89,6 +89,7 @@
 .el5 p {
   /* color: #0b121b; */
   color: azure;
+  font-family: "Luckiest Guy", cursive;
   /* color: #dddddd; */
   text-shadow: -3px 4px 4px rgba(0, 0, 0, 0.74);
   font-family: impact;
