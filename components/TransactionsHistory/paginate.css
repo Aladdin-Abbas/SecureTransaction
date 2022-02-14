@@ -1,0 +1,60 @@
+.previous-link,
+.next-link {
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 12px 8px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+
+  background-color: #000000;
+  cursor: pointer;
+  color: #6cfab5;
+}
+
+.previous-link:hover,
+.previous-link:active,
+.next-link:hover,
+.next-link:active {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #fefefe;
+}
+
+.page-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  line-height: 1.4;
+  padding: 6px 12px;
+  border: 4px double #6cfab5;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #6cfab5;
+  background-color: black;
+}
+
+.page-link:hover,
+.page-link:active {
+  background-color: white;
+  color: #000000;
+  border-color: rgb(78, 104, 39);
+}
+
+.myActive {
+  background-color: white;
+  color: #000000;
+  border-color: rgb(78, 104, 39);
+}
+
+.break-link {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 720px) {
+  .page-link,
+  .break-link {
+    display: none;
+  }
+}

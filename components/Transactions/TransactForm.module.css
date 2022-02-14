@@ -1,0 +1,205 @@
+.form-container {
+  font-family: "Luckiest Guy", cursive;
+
+  margin: 20px;
+
+  min-width: 380px;
+
+  color: rgb(255, 255, 255);
+  opacity: 1;
+
+  background-image: url("/last-edit-detail.webp");
+  background-position: 40% 50%;
+  background-position: center;
+  background-size: cover;
+
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  margin-left: 45px;
+}
+
+.form select {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    53deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(15, 76, 117, 1) 100%
+  );
+  padding: 4px;
+  width: 150px;
+  font-weight: bold;
+  margin: 0 14px;
+}
+
+.form input {
+  width: 150px;
+  font: inherit;
+  margin: 14px;
+
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    53deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(15, 76, 117, 1) 100%
+  );
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form button {
+  font: inherit;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 22px;
+  background-color: black;
+  color: white;
+  transition: 0.8s ease-in;
+}
+
+.form button:active,
+.form button:hover {
+  background-color: #0f4c75;
+  color: #e9ecec;
+}
+
+/***/
+.detail-from-container {
+  font-family: "Luckiest Guy", cursive;
+
+  margin: 20px auto;
+
+  width: 390px;
+  min-width: 380px;
+
+  color: rgb(255, 255, 255);
+  opacity: 1;
+
+  background-image: url("/last-edit-detail.webp");
+
+  background-size: cover;
+}
+
+.detail-from-container h2,
+.detail-from-container label,
+.detail-from-container button {
+  font-weight: normal;
+}
+
+.detail-from-container label {
+  font-weight: normal;
+}
+
+.detail-form,
+.form {
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.detail-form div,
+.form div {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  margin: 0 20px;
+  margin-top: 8px;
+}
+
+.detail-form select {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    53deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(15, 76, 117, 1) 100%
+  );
+  padding: 4px;
+  width: 30%;
+  font-weight: bold;
+  margin: 0 14px;
+}
+
+.detail-form input {
+  width: 20%;
+  margin: 14px;
+
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    53deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(15, 76, 117, 1) 100%
+  );
+}
+
+@media (max-width: 670px) {
+  .form,
+  .form select,
+  .form input,
+  .form button {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .form select,
+  .form input {
+    width: 80px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .detail-from-container,
+  .form-container {
+    margin: 20px auto;
+
+    min-width: 310px;
+    width: 40vw;
+  }
+
+  .detail-form select,
+  .form select {
+    width: 80px;
+    font-size: 8px;
+  }
+
+  .detail-form,
+  .form {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 330px) {
+  .detail-from-container,
+  .form-container {
+    margin: 20px auto;
+
+    min-width: 265px;
+  }
+
+  .form-container {
+    min-width: 265px;
+  }
+
+  .detail-form div,
+  .form div {
+    margin-left: 5px;
+  }
+}

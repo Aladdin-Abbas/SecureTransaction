@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #eff1f0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-image: url("/header-1-edit.webp");
+  background-size: cover;
+
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  height: 80px;
+
+  z-index: 8;
+}
+
+.footer img {
+  height: 22px;
+}
+
+@media (max-width: 540px) {
+  .footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,198 @@
+.container {
+  min-height: 100vh;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+
+  align-items: center;
+
+  background-color: #eeeeee;
+}
+
+.content {
+  width: 70vw;
+
+  margin: 0 auto;
+
+  background-color: #eeeeee;
+
+  border: 6px double #0f4c75;
+  border-radius: 20px;
+  box-shadow: -15px 15px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.content li {
+  display: flex;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.content li p {
+  width: 20%;
+}
+
+.content li p:nth-child(2) {
+  width: 40%;
+  text-align: center;
+}
+
+.list-head p:nth-child(2) {
+  text-align: center !important;
+  padding-left: 0 !important;
+}
+
+.content li:last-child {
+  border-bottom: 1px solid black;
+}
+
+.content li:nth-of-type(odd) {
+  background-color: #393e46;
+  color: #eeeeee;
+}
+.content li:nth-of-type(odd) p {
+  border-color: #eeeeee;
+}
+
+.content li:nth-of-type(even) {
+  background-color: #eeeeee;
+}
+
+.content li:first-of-type {
+  color: #e9ecec;
+
+  background-color: #393e46;
+  background-image: none;
+}
+
+.content p {
+  font-size: 1.0625rem;
+  font-weight: 550;
+  border-right: 4px solid black;
+}
+
+/* .content p:nth-last-of-type(odd) {
+  border-color: white;
+} */
+
+.content .list-head p {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border: none;
+}
+
+.content p:last-of-type {
+  border-right: none;
+}
+
+/* .content li p:last-of-type:not(.list-head p) {
+  border-right: none;
+  padding-right: 0px;
+  cursor: pointer;
+  transition: 0.55s ease-in;
+}
+.content li p:last-of-type:hover:not(.list-head p),
+.content li p:last-of-type:active:not(.list-head p) {
+  transform: translate3d(0px, 3px, 0px);
+  font-weight: bolder;
+  color: white;
+  background-color: greenyellow;
+  padding: 10px 0;
+  width: 110px;
+  text-shadow: -6px 2px 4px rgba(0, 0, 0, 0.26);
+} */
+
+.content li:nth-of-type(even) p:last-of-type:hover:not(.list-head p) {
+  color: black;
+}
+
+.fail {
+  min-height: 100%;
+}
+
+.fail div {
+  min-height: 79.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 132, 132);
+}
+
+.fail h1 {
+  color: rgb(50, 50, 54);
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: -3px -2px 5px white;
+}
+
+@media (max-width: 1007px) {
+  .content {
+    width: 97vw;
+  }
+}
+
+@media (max-width: 670px) {
+  .content {
+    width: 96vw;
+    border: none;
+    margin: 0;
+  }
+
+  .content ul {
+    margin: 0;
+  }
+  .content p {
+    font-size: 12px;
+    font-weight: normal;
+    border-right: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .content {
+    width: 94vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .content ul {
+    min-width: 270px;
+    margin: 0 auto;
+  }
+
+  .content li {
+    justify-content: space-evenly;
+  }
+
+  .content li p:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (min-width: 670px) {
+  .content li p:last-of-type:not(.list-head p) {
+    border-right: none;
+    padding-right: 0px;
+    cursor: pointer;
+    transition: 0.55s ease-in;
+  }
+  .content li p:last-of-type:hover:not(.list-head p),
+  .content li p:last-of-type:active:not(.list-head p) {
+    transform: translate3d(0px, 3px, 0px);
+    font-weight: bolder;
+    color: white;
+    background-color: greenyellow;
+    padding: 10px 0;
+    width: 110px;
+    text-shadow: -6px 2px 4px rgba(0, 0, 0, 0.26);
+  }
+}

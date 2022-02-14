@@ -1,0 +1,148 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"); */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  min-height: 100vh;
+  margin-top: 80px;
+  position: relative;
+}
+
+.el2 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 7;
+
+  background-image: url("/container-edit1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  opacity: 0.6;
+}
+
+.el3 {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 5;
+
+  background-image: url("/time-is-money-1497598.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.el4 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.el5 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+
+  z-index: 3;
+
+  border-radius: 12px;
+  place-self: center;
+  padding: 0 5px 20px;
+  background-image: url("/el5.edit1.jpg");
+  background-size: cover;
+  min-width: 340px;
+}
+
+.inner {
+  padding-left: 8px;
+  text-align: center;
+
+  /* color: #ddd; */
+  /* color: rgb(255, 75, 75); */
+  color: #a2c6f8;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 3px;
+
+  text-shadow: -3px -2px 5px black;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.outer {
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: line-through;
+
+  color: black;
+}
+
+.el5 p {
+  /* color: #0b121b; */
+  color: azure;
+  /* color: #dddddd; */
+  text-shadow: -3px 4px 4px rgba(0, 0, 0, 0.74);
+  font-family: impact;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 3rem;
+}
+
+.shadow::before {
+  color: #a2c6f8;
+  content: attr(data-text);
+  margin-top: 0.875rem;
+  opacity: 0.7;
+  position: absolute;
+  transform: perspective(200px) rotateX(40deg) scale(0.83);
+  z-index: -1;
+}
+
+.el5 button {
+  font: inherit;
+
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: 12px 8px;
+  border: 1px solid #ffffff;
+  border-radius: 22px;
+  color: #a2c6f8;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  text-shadow: -3px 4px 4px rgba(0, 0, 0, 0.74);
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: -1px 2px 8px 6px rgba(255, 255, 255, 0.75);
+}
+
+.el5 button:active,
+.el5 button:hover {
+  border: 1px solid #000000;
+  color: beige;
+  text-shadow: -3px -2px 5px black;
+  background-color: #fefefe;
+
+  background-image: url("/blue_1.jpg");
+}
+
+.el6 {
+  text-align: center;
+}
+
+@media (max-width: 341px) {
+  .el5 {
+    min-width: 278px;
+  }
+}
